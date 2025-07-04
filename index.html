@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecurePass - Your Password Manager</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="./favicon.svg" type="image/x-icon">
+</head>
+
+<body class="light-mode">
+    <!-- Floating background elements -->
+    <div class="floating-elements">
+        <div class="floating-circle circle-1"></div>
+        <div class="floating-circle circle-2"></div>
+        <div class="floating-circle circle-3"></div>
+        <div class="floating-circle circle-4"></div>
+        <div class="floating-circle circle-5"></div>
+    </div>
+
+    <!-- Confetti container -->
+    <div class="confetti-container"></div>
+
+    <nav>
+        <div class="logo"><i class="fas fa-lock"></i> SecurePass</div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul class="nav-links">
+            <li><i class="fas fa-home"></i> Home</li>
+            <li><i class="fas fa-info-circle"></i> About</li>
+            <li><i class="fas fa-envelope"></i> Contact</li>
+            <li class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+                <span class="toggle-ball"></span>
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="hero">
+            <h1 class="hero-title">
+                <span class="text-gradient">🔒 Password Manager</span>
+            </h1>
+            <div class="hero-subtitle">
+                <span class="welcome-text">✨ Welcome to Your Secure Digital Hub ✨</span>
+            </div>
+            <p class="hero-description">
+                <span class="highlight-word">Your</span> <span class="animated-underline">digital universe</span>
+                contains countless keys,<br>
+                and we understand the <span class="highlight-word">challenge</span> of keeping them all secure.<br>
+                That's why we've built your <span class="rainbow-text">ultimate password sanctuary</span> 🛡️
+            </p>
+        </div>
+
+        <div class="password-section">
+            <h2>Your Passwords <span id="alert"><i class="fas fa-check-circle"></i> Copied!</span></h2>
+            <div class="table-container">
+                <table>
+                    <tr>
+                        <th>Website</th>
+                        <th>Username</th>
+                        <th>Password</th>
+                        <th>Delete</th>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="form-container rainbow-border">
+                <h2>Add a Password</h2>
+                <form action="/submit" method="post">
+                    <div class="form-group">
+                        <label for="website"><i class="fas fa-globe"></i> Website:</label>
+                        <input type="text" id="website" name="website" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="username"><i class="fas fa-user"></i> Username:</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password"><i class="fas fa-key"></i> Password:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+
+                    <button class="btn magical-btn" type="submit">
+                        <span class="btn-text">Submit</span>
+                        <span class="btn-icon"><i class="fas fa-arrow-right"></i></span>
+                        <span class="magic-dust"></span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- footer section -->
+    <footer class="rainbow-footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#" class="rainbow-hover"><i class="fas fa-shield-alt"></i> Security</a>
+                <a href="#" class="rainbow-hover"><i class="fas fa-question-circle"></i> Help</a>
+                <a href="#" class="rainbow-hover"><i class="fas fa-envelope"></i> Contact</a>
+            </div>
+            <div class="footer-copyright">
+                <p class="rainbow-text">© <span id="year"></span> SecurePass Password Manager</p>
+                <div class="creator">
+                    <span>Created with <i class="fas fa-heart rainbow-pulse"></i> by <span
+                            class="rainbow-text">Suhana</span></span>
+                </div>
+            </div>
+        </div>
+        <div class="footer-rainbow"></div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>
